@@ -5,4 +5,5 @@ def method(collection)
     yield array[i]
     i = i + 1
   end
+  collection
 end
