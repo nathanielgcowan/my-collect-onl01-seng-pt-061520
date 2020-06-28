@@ -1,9 +1,15 @@
-
-def my_collect(collection)
-  i=0
-  while i < collection.length
-    yield array[i]
+  while i < array.length
+    yield(array[i])
     i = i + 1
   end
-  my_collect
+end
+my_each(list) {|i| puts "So I think #{i} is a piece of shit"}
+def hello(array)
+  i = 0
+  collection = []
+  while i < array.length
+    collection << yield(array[i])
+    i += 1
+  end
+  collection
 end
