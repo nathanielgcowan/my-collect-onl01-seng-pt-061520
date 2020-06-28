@@ -1,5 +1,5 @@
 
-def hello_t(array)
+def hello_t(collection)
   i=0
   while i < array.length
     yield array[i]
